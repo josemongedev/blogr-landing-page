@@ -1,7 +1,6 @@
 
-type Props=any
 
-const Features = (props: Props) => {
+const Features = () => {
   return (
     <div>Features</div>
   )
