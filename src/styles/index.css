@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Overpass";
+  src: url("/blogr-landing-page/fonts/Overpass-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Overpass";
+  src: url("/blogr-landing-page/fonts/Overpass-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/blogr-landing-page/fonts/Ubuntu-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/blogr-landing-page/fonts/Ubuntu-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/blogr-landing-page/fonts/Ubuntu-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  /* - Light red (CTA text): hsl(356, 100%, 66%) */
+  --clr-primary-light-red-cta-text: hsl(356, 100%, 66%);
+  /* - Very light red (CTA hover background): hsl(355, 100%, 74%) */
+  --clr-primary-very-light-red-cta-hover-background: hsl(355, 100%, 74%);
+  /* - Very dark blue (headings): hsl(208, 49%, 24%) */
+  --clr-primary-very-dark-blue-headings: hsl(208, 49%, 24%);
+
+  /* ### Neutral */
+
+  /* - White (text): hsl(0, 0%, 100%) */
+  --clr-neutral-white-text: hsl(0, 0%, 100%);
+  /* - Grayish blue (footer text): hsl(240, 2%, 79%) */
+  --clr-neutral-grayish-blue-footer-text: hsl(240, 2%, 79%);
+  /* - Very dark grayish blue (body copy): hsl(207, 13%, 34%) */
+  --clr-neutral-very-dark-grayish-blue-body-copy: hsl(207, 13%, 34%);
+  /* - Very dark black blue (footer background): hsl(240, 10%, 16%) */
+  --clr-neutral-very-dark-black-blue-footer-background: hsl(240, 10%, 16%);
+
+  /* ### Gradient */
+
+  /* Background gradient - Intro/CTA mobile nav: */
+
+  /* - Very light red: hsl(13, 100%, 72%) */
+  --clr-gradient-very-light-red-mobile-nav: hsl(13, 100%, 72%);
+  /* - Light red: hsl(353, 100%, 62%) */
+  --clr-gradient-light-red-mobile-nav: hsl(353, 100%, 62%);
+
+  /* Background gradient - body: */
+
+  /* - Very dark gray blue: hsl(237, 17%, 21%) */
+  --clr-gradient-very-dark-gray-blue-body: hsl(237, 17%, 21%);
+  /* - Very dark desaturated blue: hsl(237, 23%, 32%) */
+  --clr-gradient-very-dark-desaturated-blue-body: hsl(237, 23%, 32%);
+  /* ## Typography */
+
+  /* ### Body Copy */
+
+  /* - Font size: 16px */
+  --fs-base: 16px;
+
+  /* ### Fonts */
+
+  /* - Family: [Overpass](https://fonts.google.com/specimen/Overpass?preview.text_type=custom)
+  - Weights: 300, 600 */
+  --ff-overpass: "Overpass";
+  --ff-overpass-light: 300;
+  --ff-overpass-semibold: 600;
+
+  /* - Family: [Ubuntu](https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom)
+  - Weights: 400, 500, 700 */
+  --ff-ubuntu: "Ubuntu", sans-serif;
+  --ff-ubuntu-regular: 400;
+  --ff-ubuntu-medium: 500;
+  --ff-ubuntu-bold: 700;
+}
+
+body {
+  font-size: var(--fs-base);
+}
