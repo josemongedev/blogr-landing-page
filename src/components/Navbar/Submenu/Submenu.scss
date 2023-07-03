@@ -1,0 +1,98 @@
+.submenu {
+  font-family: var(--ff-overpass);
+  font-weight: var(--fw-overpass-semibold);
+  line-height: 28px;
+  position: relative;
+  @include xl {
+    font-family: var(--ff-ubuntu);
+  }
+
+  &__summary {
+    cursor: pointer;
+    list-style: none;
+    vertical-align: middle;
+    font-size: var(--fs-300);
+    color: var(--clr-primary-very-dark-blue-headings);
+  }
+  @include xl {
+    &__summary {
+      color: var(--clr-neutral-white-text);
+      opacity: 0.75;
+      -webkit-opacity: 0.75;
+
+      &:hover {
+        text-decoration: underline;
+        opacity: 1 !important;
+        -webkit-opacity: 1 !important;
+      }
+    }
+  }
+  &__summary::after {
+    content: "";
+    position: absolute;
+    margin-left: 7.5px;
+    vertical-align: middle;
+    width: 8px;
+    height: 28px;
+    background-image: url(../../../assets/icon-arrow-dark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-color: var(--clr-primary-very-light-red-cta-hover-background);
+
+    transform: rotate(0deg);
+    --rotation-time: 0.1s;
+    -moz-transition: transform var(--rotation-time);
+    -webkit-transition: transform var(--rotation-time);
+    transition: transform var(--rotation-time);
+  }
+  &.open_rotate {
+    .submenu__summary {
+      opacity: 0.75;
+    }
+    .submenu__summary::after {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--fs-200);
+    gap: 12px;
+    width: 276px;
+    height: auto;
+    padding: 17px;
+    border-radius: 5px;
+    opacity: 0.07999999821186066;
+    opacity: 1;
+    background: var(--clr-gradient-very-dark-gray-blue-menu-background);
+  }
+  @include xl {
+    &__content {
+      position: absolute;
+      background: var(--clr-neutral-white-text);
+      padding: 24px;
+    }
+  }
+  &__link {
+    cursor: pointer;
+    color: var(--clr-primary-very-dark-blue-headings);
+    opacity: 0.75;
+    font-weight: var(--fw-overpass-light);
+    font-size: var(--fs-200);
+    &:hover {
+      font-weight: var(--fw-overpass-semibold);
+    }
+  }
+
+  @include xl {
+    &__link {
+      text-align: left;
+      color: var(--clr-gradient-very-dark-gray-blue-body);
+      font-weight: var(--fw-ubuntu-regular);
+      &:hover {
+        font-weight: var(--fw-ubuntu-bold);
+      }
+    }
+  }
+}

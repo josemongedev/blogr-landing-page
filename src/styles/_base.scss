@@ -1,0 +1,19 @@
+body {
+  font-size: var(--fs-base);
+  font-weight: var(--ff-overpass-light);
+  font-family: var(--ff-overpass);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--ff-overpass-semibold);
+}
+
+button,
+a {
+  border: none;
+  background: none;
+  text-decoration: none;
+  font-family: var(--ff-ubuntu);
+}

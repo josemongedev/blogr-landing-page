@@ -1,0 +1,51 @@
+.button {
+  outline: none;
+  width: 137px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-200);
+  font-weight: var(--fw-ubuntu-bold);
+  border-radius: 28px;
+  background: var(--clr-neutral-white-text);
+  color: var(--clr-primary-light-red-cta-text);
+
+  &:hover {
+    color: var(--clr-neutral-white-text);
+    background: var(--clr-primary-very-light-red-cta-hover-background);
+  }
+}
+
+.button__no-bg {
+  border: 1px solid var(--clr-neutral-white-text);
+  color: var(--clr-neutral-white-text);
+  background: none;
+
+  &:hover {
+    color: var(--clr-primary-light-red-cta-text);
+    background: var(--clr-neutral-white-text);
+  }
+}
+
+.button__signup {
+  color: var(--clr-neutral-white-text);
+  background: var(--clr-gradient-combined-mobile-nav);
+  &:hover {
+    color: var(--clr-primary-light-red-cta-text);
+    background: var(--clr-neutral-white-text);
+    border: 1px solid var(--clr-primary-light-red-cta-text);
+  }
+}
+@include xl {
+  .button__signup {
+    border: none;
+    background: var(--clr-neutral-white-text);
+    color: var(--clr-primary-light-red-cta-text);
+
+    &:hover {
+      color: var(--clr-neutral-white-text);
+      background: var(--clr-primary-very-light-red-cta-hover-background);
+    }
+  }
+}

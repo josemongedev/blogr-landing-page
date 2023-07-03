@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Overpass";
+  src: url("/blogr-landing-page/fonts/Overpass-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Overpass";
+  src: url("/blogr-landing-page/fonts/Overpass-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/blogr-landing-page/fonts/Ubuntu-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/blogr-landing-page/fonts/Ubuntu-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/blogr-landing-page/fonts/Ubuntu-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ## Typography */
+
+  /* ### Body Copy */
+
+  /* - Font size: 16px */
+  --fs-base: 16px;
+
+  --fs-100: 15px;
+  --fs-200: 16px;
+  --fs-300: 18px;
+  --fs-400: 20px;
+  --fs-600: 36px;
+  --fs-700: 40px;
+  --fs-800: 64px;
+
+  /* ### Fonts */
+
+  /* - Family: [Overpass](https://fonts.google.com/specimen/Overpass?preview.text_type=custom)
+    - Weights: 300, 600 */
+  --ff-overpass: "Overpass", sans-serif;
+  --fw-overpass-light: 300;
+  --fw-overpass-semibold: 600;
+
+  /* - Family: [Ubuntu](https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom)
+    - Weights: 400, 500, 700 */
+  --ff-ubuntu: "Ubuntu", sans-serif;
+  --fw-ubuntu-regular: 400;
+  --fw-ubuntu-medium: 500;
+  --fw-ubuntu-bold: 700;
+}

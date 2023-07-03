@@ -11,6 +11,22 @@
 
 <body>
   <main id="root"></main>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+
+    #root {
+      width: 375px;
+    }
+
+    @media (min-width:1440px) {
+      #root {
+        width: 1440px;
+      }
+    }
+  </style>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 

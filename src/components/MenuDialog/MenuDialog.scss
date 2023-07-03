@@ -1,0 +1,12 @@
+dialog {
+  position: absolute;
+  top: 125px;
+  width: 324px;
+  // height: 511px;
+  height: auto;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.24);
+}

@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Product",
+        "ref": [
+            "Overview",
+            "Pricing",
+            "Marketplace",
+            "Features",
+            "Integrations"
+        ]
+    },
+    {
+        "name": "Company",
+        "ref": [
+            "About",
+            "Team",
+            "Blog",
+            "Careers"
+        ]
+    },
+    {
+        "name": "Connect",
+        "ref": [
+            "Contact",
+            "Newsletter",
+            "LinkedIn"
+        ]
+    }
+]
