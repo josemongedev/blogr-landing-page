@@ -2,7 +2,7 @@ import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <header className="hero">
       <h1 className="hero__heading">
         A modern <br /> publishing platform
       </h1>
@@ -17,7 +17,7 @@ const Hero = () => {
           Learn More
         </a>
       </div>
-    </section>
+    </header>
   );
 };
 

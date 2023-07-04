@@ -1,0 +1,8 @@
+h1.feature__title,
+h2.feature__subtitle,
+p.feature__description {
+  text-align: center;
+  @include xl {
+    text-align: left;
+  }
+}

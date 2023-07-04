@@ -31,7 +31,7 @@
   /* - Grayish blue (footer text): hsl(240, 2%, 79%) */
   --clr-neutral-grayish-blue-footer-text: hsl(240, 2%, 79%);
   /* - Very dark grayish blue (body copy): hsl(207, 13%, 34%) */
-  --clr-neutral-very-dark-grayish-blue-body-copy: hsl(207, 13%, 34%);
+  --clr-neutral-very-dark-grayish-blue-body-copy: hsl(206, 13%, 34%);
   /* - Very dark black blue (footer background): hsl(240, 10%, 16%) */
   --clr-neutral-very-dark-black-blue-footer-background: hsl(240, 10%, 16%);
 
@@ -52,7 +52,7 @@
   /* Background gradient - body: */
 
   /* - Very dark gray blue: hsl(237, 17%, 21%) */
-  --clr-gradient-very-dark-gray-blue-body: hsl(237, 17%, 21%);
+  --clr-gradient-very-dark-gray-blue-body: hsl(237, 18%, 21%);
   --clr-gradient-very-dark-gray-blue-menu-background: hsl(
     237,
     17%,
@@ -60,5 +60,5 @@
     0.07999999821186066
   );
   /* - Very dark desaturated blue: hsl(237, 23%, 32%) */
-  --clr-gradient-very-dark-desaturated-blue-body: hsl(237, 23%, 32%);
+  --clr-gradient-very-dark-desaturated-blue-body: rgb(63, 65, 100);
 }

@@ -2,12 +2,25 @@ body {
   font-size: var(--fs-base);
   font-weight: var(--ff-overpass-light);
   font-family: var(--ff-overpass);
+  color: var(--clr-neutral-very-dark-grayish-blue-body-copy);
 }
 
 h1,
 h2,
 h3 {
-  font-weight: var(--ff-overpass-semibold);
+  font-weight: var(--fw-overpass-semibold);
+  color: var(--clr-primary-very-dark-blue-headings);
+  text-align: center;
+  @include xl {
+    text-align: left;
+  }
+}
+
+p {
+  text-align: center;
+  @include xl {
+    text-align: left;
+  }
 }
 
 button,

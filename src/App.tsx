@@ -6,9 +6,13 @@ import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
     <>
+      {/* General navigation(site links) and authentication */}
       <Navbar />
+      {/* Main CTA and hero banner */}
       <Hero />
+      {/* 3 sections */}
       <Features />
+      {/* Navigations links */}
       <Footer />
     </>
   );

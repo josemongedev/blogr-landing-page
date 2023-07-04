@@ -45,6 +45,11 @@
     -webkit-transition: transform var(--rotation-time);
     transition: transform var(--rotation-time);
   }
+  @include xl {
+    &__summary::after {
+      background-image: url(../../../assets/icon-arrow-light.svg);
+    }
+  }
   &.open_rotate {
     .submenu__summary {
       opacity: 0.75;
@@ -72,6 +77,7 @@
       position: absolute;
       background: var(--clr-neutral-white-text);
       padding: 24px;
+      width: 168px;
     }
   }
   &__link {

@@ -1,9 +1,15 @@
-
+import BenefitsFeatures from "./BenefitsFeatures/BenefitsFeatures";
+import FutureFeatures from "./FutureFeatures/FutureFeatures";
+import InfrastructureFeatures from "./InfrastructureFeatures/InfrastructureFeatures";
 
 const Features = () => {
   return (
-    <div>Features</div>
-  )
-}
+    <>
+      <FutureFeatures />
+      <InfrastructureFeatures />
+      <BenefitsFeatures />
+    </>
+  );
+};
 
-export default Features
+export default Features;

@@ -1,0 +1,78 @@
+.future {
+  width: 375px;
+  display: grid;
+  place-items: center;
+  height: 1459px;
+  padding-block: 100px 273px;
+  padding-inline: 24px;
+
+  grid-auto-flow: column;
+  grid-template:
+    "title" 43px
+    "..." 38px
+    "editor" 331px
+    "...." 46px
+    "text1" 1fr
+    "text2" 1fr
+    /
+    327px;
+
+  @include xl {
+    width: 1440px;
+    height: 1010px;
+    padding-block: 71px 57px;
+    padding-left: 165px;
+    grid-template:
+      "title title editor" 233px
+      "text1 ... editor" 211px
+      "...   ... editor" 64px
+      "text2 ... editor" 169px
+      "... ... editor" 213px /
+      540px 125px 610px;
+  }
+
+  .future__title {
+    grid-area: title;
+    font-size: var(--fs-500);
+    @include xl {
+      font-size: var(--fs-700);
+      letter-spacing: -1.2px;
+      grid-row: 1 / 2;
+      grid-column: 1 / 4;
+    }
+  }
+  .future__editor {
+    grid-area: editor;
+    @include xl {
+      justify-self: self-start;
+    }
+  }
+  .future__text-1 {
+    grid-area: text1;
+  }
+  .future__text-2 {
+    grid-area: text2;
+  }
+
+  .future__block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include xl {
+      align-self: self-start;
+    }
+  }
+
+  // Hide desktop image when mobile, and hide mobile image when desktop
+  &__editor-svg-desktop {
+    display: none;
+  }
+  @include xl {
+    &__editor-svg-mobile {
+      display: none;
+    }
+    &__editor-svg-desktop {
+      display: block;
+    }
+  }
+}
