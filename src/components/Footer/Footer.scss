@@ -1,0 +1,58 @@
+.footer {
+  padding-block: 75px;
+  border-radius: 0px 100px 0px 0px;
+  color: var(--clr-neutral-grayish-blue-footer-text);
+  background: var(--clr-neutral-very-dark-black-blue-footer-background);
+  text-align: center;
+
+  @include xl {
+    text-align: left;
+    display: flex;
+    gap: 184px;
+    padding-inline: 165px;
+    padding-block: 70px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @include xl {
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+
+  &__category {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    @include xl {
+      width: 255px;
+    }
+  }
+
+  &__brand {
+    // padding-inline: 137px;
+    margin-bottom: 72px;
+  }
+  &__title {
+    color: var(--clr-neutral-white-text);
+    font-size: var(--fs-300);
+    line-height: 33px;
+    @include xl {
+      font-size: var(--fs-100);
+    }
+  }
+
+  &__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: var(--fs-300);
+    line-height: 33px;
+    @include xl {
+      font-size: var(--fs-100);
+    }
+  }
+}

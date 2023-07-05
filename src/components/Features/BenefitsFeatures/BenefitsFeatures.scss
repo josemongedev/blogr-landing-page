@@ -1,0 +1,68 @@
+.benefits {
+  width: 375px;
+  padding-block: 79px 100px;
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto 46px auto 40px auto;
+  grid-template-areas:
+    "laptop"
+    "..."
+    "text1"
+    "..."
+    "text2";
+
+  @include xl {
+    width: 1440px;
+    padding-right: 165px;
+    grid-template-columns: calc(1440px - 540px - 125px - 165px) 125px 540px;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "laptop ... ..."
+      "laptop ... text1"
+      "laptop ... ..."
+      "laptop ... text2"
+      "laptop ... ...";
+  }
+
+  &__laptop-svg-mobile {
+    width: inherit;
+    grid-area: laptop;
+    overflow: hidden;
+    transform: scale(1.3279);
+    @include xl {
+      display: none;
+    }
+  }
+  &__laptop-svg-desktop {
+    display: none;
+    @include xl {
+      grid-area: laptop;
+      display: initial;
+      transform: translateX(-97px);
+    }
+  }
+
+  &__subtitle {
+    font-size: var(--fs-500);
+    line-height: 32px;
+  }
+
+  &__text1 {
+    grid-area: text1;
+  }
+  &__text2 {
+    grid-area: text2;
+  }
+  &__text1,
+  &__text2 {
+    width: 318px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    @include xl {
+      width: 100%;
+    }
+  }
+}
