@@ -1,4 +1,5 @@
-<svg width="552" height="579" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="552" height="579" viewBox="0 0 552 579" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <filter x="-32.1%" y="-11.5%" width="164.2%" height="132.2%" filterUnits="objectBoundingBox" id="phones__b">
             <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1" />

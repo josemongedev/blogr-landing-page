@@ -60,5 +60,10 @@
     0.07999999821186066
   );
   /* - Very dark desaturated blue: hsl(237, 23%, 32%) */
-  --clr-gradient-very-dark-desaturated-blue-body: rgb(63, 65, 100);
+  --clr-gradient-very-dark-desaturated-blue-body: hsl(237, 23%, 32%);
+  --clr-gradient-combined-infrastructure: linear-gradient(
+    135deg,
+    var(--clr-gradient-very-dark-gray-blue-body) 0%,
+    var(--clr-gradient-very-dark-desaturated-blue-body) 100%
+  );
 }
